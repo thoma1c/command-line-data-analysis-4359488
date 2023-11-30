@@ -1,0 +1,17 @@
+Useful commands for this course I'm going to forget:
+
+cat - ouput file contents
+less - outputs less info
+
+curl - don't forget the ''
+
+#page dump (might want to write to file) 
+lynx -dump -nolist 'https://en.wikipedia.org/wiki/Death_of_a_Salesman'
+
+
+gsutil - could be interesting, don't want to authenticate
+
+databases
+
+sqlite3 data/bikes.db #make sure to check where your pwd is
+.schema
