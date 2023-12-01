@@ -1,3 +1,4 @@
+
 Useful commands for this course I'm going to forget:
 
 cat - ouput file contents
@@ -15,3 +16,8 @@ databases
 
 sqlite3 data/bikes.db #make sure to check where your pwd is
 .schema
+
+-----
+
+ETL Challenge - Extract, Transform, Load
+need to look at solution again. 
