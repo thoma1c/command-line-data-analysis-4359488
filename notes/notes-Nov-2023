@@ -1,6 +1,8 @@
 
 Useful commands for this course I'm going to forget:
 
+soft wrapping - esc then $ 
+
 cat - ouput file contents
 less - outputs less info
 
@@ -21,3 +23,16 @@ sqlite3 data/bikes.db #make sure to check where your pwd is
 
 ETL Challenge - Extract, Transform, Load
 need to look at solution again. 
+
+
+Normalize challenge - second row and all lower case:
+cat data/cart.txt | awk '{print $2}' | tr '[A-Z]' '[a-z]'
+
+Sum the counts:
+cat data/cart.txt | awk '{sum += $3} END{print sum}'
+
+-----
+
+printf '%-10s %2d\n' carrot 17; printf '%-10s %2d\n' egg 3
+
+cat data/daily_trips.csv | sed 's/,/ /' | gnuplot -e 'set term png; plot "-" using 0:2 with boxplot title "Rides"' > chart.png
